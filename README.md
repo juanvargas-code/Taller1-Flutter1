@@ -1,21 +1,27 @@
-<<<<<<< HEAD
-# taller1
+# Taller 1 - Flutter
+Módulo de Autenticación JWT y Almacenamiento Seguro.
 
-A new Flutter project.
+## Módulo de Autenticación JWT
+Este proyecto implementa un sistema de autenticación completo integrado con la API pública de VisionTIC.
 
-## Getting Started
+### Características:
+- **Gestión de Estados:** Utiliza el paquete `provider` para manejar estados de carga, éxito y error de forma reactiva.
+- **Seguridad:** 
+  - Almacenamiento de tokens sensibles en el llavero del sistema mediante `flutter_secure_storage`.
+  - Persistencia de datos de perfil (no sensibles) en `shared_preferences`.
+- **Arquitectura:** Separación clara entre modelos, servicios de API/almacenamiento y gestión de estados.
 
-This project is a starting point for a Flutter application.
+### Credenciales de Prueba (VisionTIC):
+- **Email:** `admin@alpha.com`
+- **Password:** `12345678`
 
-A few resources to get you started if this is your first Flutter project:
+## Flujo de Trabajo (Original)
+`Generar APK` -> `App Distribution` -> `Testers` -> `Instalación` -> `Actualización`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Publicación en Firebase
+1. **Preparación:** Asegurarse de que el archivo `pubspec.yaml` tenga la versión correcta.
+2. **Generación del APK:** Ejecutar `flutter build apk --release`.
+3. **Distribución:** Subir a Firebase Console > App Distribution e invitar a `dduran@uceva.edu.co`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Taller1-Flutter
->>>>>>> 60edc7f5f4b2d6e935e0f72e51953954b124da33
+## Bitácora de QA
+Consulte el archivo `QA_LOG.md` para el historial de versiones y pruebas.
